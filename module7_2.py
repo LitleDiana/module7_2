@@ -16,9 +16,15 @@ def custom_write(file_name, strings):
 
 
 # Пример использования функции
-file_name = 'example.txt'
-strings = ['Text for tell.', 'Используйте кодировку utf-8.']
-result = custom_write(file_name, strings)
+info = [
+    'Text for tell.',
+    'Используйте кодировку utf-8.',
+    'Because there are 2 languages!',
+    'Спасибо!'
+]
+
+result = custom_write('test.txt', info)
 
 # Выводим результат
-print(result)
+for elem in result.items():
+    print(elem)
